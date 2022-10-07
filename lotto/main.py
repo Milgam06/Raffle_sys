@@ -28,10 +28,10 @@ if choice01 == num[0]\
             print("Perfect Clear")
             s = smtplib.SMTP('smtp.gmail.com', 587)
             s.starttls()
-            s.login("milgamfruit@gmail.com", "yoeslssmohneydgu")
+            s.login(#니 구글 이메일, #구글 앱 비밀번호)
             msg = MIMEText("You got perfect answers!")
             msg["Subject"] = "Congratulations!! _Lotto_"
-            s.sendmail('milgamfruit@gmail.com', email, msg.as_string())
+            s.sendmail(#니 구글 , email, msg.as_string())
             s.quit()
 
 else:
